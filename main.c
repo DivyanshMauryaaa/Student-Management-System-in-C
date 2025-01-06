@@ -185,8 +185,44 @@ int main()
             break;
 
         case 4:
-            // Delete (Remove a student) - You can implement this
+            // Delete (Remove a student)
+            {
+                int idToDelete;
+                printf("Enter student ID to delete: ");
+                scanf("%d", &idToDelete);
+
+                // Check for invalid id
+                if (idToDelete < 1 || idToDelete > studentCount)
+                {
+                    printf("Invalid student ID!\n");
+                    break;
+                }
+
+                // Free memory for the student to delete
+                free(students[idToDelete - 1]->name); // Free memory for the name
+                free(students[idToDelete - 1]);       // Free memory for the student
+
+                // Shift the remaining students to fill the gap
+                for (int i = idToDelete - 1; i < studentCount - 1; i++)
+                {
+                    students[i] = students[i + 1];
+                }
+
+                // Decrease student count
+                studentCount--;
+
+                // Reallocate memory for the student array (optional, can help optimize memory usage)
+                students = (struct Student **)realloc(students, studentCount * sizeof(struct Student *));
+                if (students == NULL && studentCount > 0)
+                {
+                    printf("Memory reallocation failed!\n");
+                    break;
+                }
+
+                printf("Student deleted successfully!\n\n\n");
+            }
             break;
+
         case 5:
             printf("Exiting...\n\n");
 
