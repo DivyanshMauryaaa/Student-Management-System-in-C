@@ -123,8 +123,6 @@
 </ul>
 
 <p>Before the program exits, it ensures that all memory is freed, preventing any memory leaks.</p>
-
-<h2 id="license">License</h2>
     <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
 
 <h3>Thank you for using <strong>Student Manager v1.0</strong>!</h3>
