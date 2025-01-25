@@ -106,7 +106,7 @@ int main()
         case 2:
             // Display all student details
             printf("Student Details\n");
-            printf("ID\t\tName\t\tAge\t\tRoll\t\tPhone\t\tGovernmentID\n");
+            printf("\n");
 
             // Loop through all students and display their details
             for (int i = 0; i < studentCount; i++)
