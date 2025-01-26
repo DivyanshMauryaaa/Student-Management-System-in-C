@@ -58,7 +58,7 @@
 
 <h3>Step 2: Clone the Repository</h3>
     <p>Clone this repository to your local machine:</p>
-    <pre><code>git clone https://github.com/yourusername/student-manager.git</code></pre>
+    <pre><code>git clone https://github.com/DivyanshMauryaaa/Student-Management-System-in-C</code></pre>
 
 <h3>Step 3: Compile the Program</h3>
     <p>Navigate to the project directory and run the following command to compile the program:</p>
